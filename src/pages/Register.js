@@ -18,7 +18,7 @@ const Register = () => {
   };
   const handleSaveUser = () => {
     axios
-      .post("http://localhost:5000/register", {
+      .post("https://auth-passport-jwt-react.herokuapp.com/register", {
         username: username,
         password: password,
       })

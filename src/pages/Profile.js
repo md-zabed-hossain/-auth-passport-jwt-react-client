@@ -7,7 +7,7 @@ const Profile = () => {
   useEffect(() => {
     const token = localStorage.getItem("token");
     axios
-      .get("http://localhost:5000/profile", {
+      .get("https://auth-passport-jwt-react.herokuapp.com/profile", {
         headers: {
           Authorization: token,
         },
